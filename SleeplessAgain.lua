@@ -414,8 +414,10 @@ local function updateTemperateBar()
 	elseif(temperatureBar.warmingUp) then
 		temperatureBar.value = temperatureBar.value + 1/10;
 	else
-		local zoneTemperature = SAMapList[GetZoneText()];
-		local tempDiff = zoneTemperature - 18;
+		local zoneTemperature, tempDiff = SAMapList[GetZoneText()], 0;
+		if(zoneTemperature) then
+			tempDiff = zoneTemperature - 18;
+		end
 		
 		---------
 		--BodyTemp -	AmbientTemp -	tempDiff -	shouldChange
