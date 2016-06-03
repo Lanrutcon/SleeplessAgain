@@ -1,0 +1,10 @@
+## Interface: 40300
+## Title: SleeplessAgain
+## Author: Lanrutcon
+## Notes: Eat, Drink, Sleep, Repeat
+## Version: 1.0
+## SavedVariables: SleeplessAgainSV
+
+SleeplessAgain.lua
+InnkeeperList.lua
+MapList.lua
